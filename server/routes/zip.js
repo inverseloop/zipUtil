@@ -13,7 +13,7 @@ router.get(BASE_URL + '/:id', async (ctx) => {
         console.log('zip with zip')
         ctx.body = {
         status: 'success',
-        data: zips[ctx.params.id]
+        latLon: zips[ctx.params.id]
         }
   } catch (err) {
     console.log('Zip router err:' + err)
